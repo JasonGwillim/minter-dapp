@@ -7,18 +7,16 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "TheDarkClowns_";
+const namePrefix = "_TheDarkClowns_";
 const description = "The Dark Clowns Have Come To Play";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 3500,
+    growEditionSizeTo: 100,
     layersOrder: [
-      { name: "Black" },
       { name: "Background" },
-      { name: "Backing" },
       { name: "Bottom" },
       { name: "Coat" },
       { name: "Eyeball" },
@@ -52,20 +50,20 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'polygon'; // only rinkeby or polygon
+const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'TheDarkClowns_';
 const CONTRACT_SYMBOL = 'TDC';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
-const OWNER_ADDRESS = '0x6eAFB48f4882C105d9BF29dA157a3552A2E341ea';
-const TREASURY_ADDRESS = '0x6eAFB48f4882C105d9BF29dA157a3552A2E341ea';
+const OWNER_ADDRESS = '0x7c93eCCbE8952E3f7962Aca992f5dF45Ee5b3Cb9';
+const TREASURY_ADDRESS = '0x7c93eCCbE8952E3f7962Aca992f5dF45Ee5b3Cb9';
 const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 8; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-03-25T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-04-09T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = null; // Optional. Eg: 2022-02-08T11:30:48+00:00
