@@ -17,6 +17,7 @@ const layerConfigurations = [
     growEditionSizeTo: 100,
     layersOrder: [
       { name: "Background" },
+      { name: "Backing" },
       { name: "Bottom" },
       { name: "Coat" },
       { name: "Eyeball" },
