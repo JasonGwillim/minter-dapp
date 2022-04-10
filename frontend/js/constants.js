@@ -1,5 +1,5 @@
-const contractAddress = "0xe81FbaC4e7CA9d4d22296A5614Ad482c78561882"; //Replace with your own contract address
-const chain = 'polygon'; // rinkeby or polygon
+const contractAddress = "0xa8d07FA473d2B216C96c84816287e5A49ea09c78"; //Replace with your own contract address
+const chain = 'rinkeby'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the The Dark Clowns_ NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
